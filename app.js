@@ -1,5 +1,4 @@
-// Discord webhook (client-side). หากกังวลเรื่อง spam แนะนำย้ายไป server.
-const WEBHOOK_URL = ENV.WEBHOOK_URL
+const ENV = DC_ENV
 
 const MAX_LEN = 4000;
 const DRAFT_KEY = "release.draft.v1";
