@@ -1,4 +1,4 @@
-const ENV = DC_ENV
+const WEBHOOK_URL = "https://discord.com/api/webhooks/1467760881478926408/A4sjOiHL6yM8UDrLIoB0xiUZe0jLdEO-jjAW2RMPGKff2U_LXM0vTX3M4VAT5tAUN5Zx";
 
 const MAX_LEN = 4000;
 const DRAFT_KEY = "release.draft.v1";
