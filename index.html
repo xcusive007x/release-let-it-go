@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>release — let it out</title>
+<meta name="description" content="A calm, minimal space to release your thoughts and feelings." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <div class="blob blob-blue"></div>
+    <div class="blob blob-pink"></div>
+    <div class="blob blob-pink-sm"></div>
+
+    <div class="container">
+      <header class="header fade-in">
+        <h1 class="title">release</h1>
+        <p id="quote" class="quote"></p>
+      </header>
+
+      <form id="form" class="card fade-in">
+        <textarea id="text" rows="10" maxlength="4000"
+          placeholder="เขียนทุกอย่างที่อยากปล่อยออกมา..."></textarea>
+
+        <div class="nickname-row">
+          <button type="button" id="nickname-toggle" class="link-btn">+ ใส่ชื่อเล่น (ถ้าอยาก)</button>
+          <input type="text" id="nickname" class="nickname-input hidden" maxlength="40" placeholder="ชื่อเล่น (ไม่ใส่ก็ได้)" />
+        </div>
+
+        <div class="footer-row">
+          <span id="counter" class="counter">0 / 4000 <span class="hint">⌘/Ctrl + Enter เพื่อส่ง</span></span>
+          <button type="submit" id="submit" class="send-btn" disabled>ปล่อยมันไป</button>
+        </div>
+      </form>
+
+      <p id="after" class="after">ทุกคำที่เขียน จะถูกปล่อยไปอย่างเบาๆ</p>
+    </div>
+
+    <div id="toast" class="toast"></div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
